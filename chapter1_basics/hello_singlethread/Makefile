@@ -1,7 +1,7 @@
 MKDIR := mkdir -p
 CFLAGS := -Wall -Werror -Wextra -pedantic
 PROG := bin/hello
-OBJS := $(patsubst src/%.c,obj/%.o, $(wildcard src/*.c))
+OBJS := $(patsubst src/%.cpp,obj/%.o, $(wildcard src/*.cpp))
 
 .PHONY: all clean
 

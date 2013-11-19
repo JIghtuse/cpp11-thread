@@ -2,7 +2,7 @@ MKDIR := mkdir -p
 CFLAGS := -Wall -Werror -Wextra -pedantic -std=c++11
 LDFLAGS := -pthread
 PROG := bin/hello
-OBJS := $(patsubst src/%.c,obj/%.o, $(wildcard src/*.c))
+OBJS := $(patsubst src/%.cpp,obj/%.o, $(wildcard src/*.cpp))
 
 .PHONY: all clean
 
