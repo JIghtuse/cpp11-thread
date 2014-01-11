@@ -15,3 +15,6 @@
 # Directories with objects/binaries
 bin/
 obj/
+
+# Vim swap files
+*.swp
